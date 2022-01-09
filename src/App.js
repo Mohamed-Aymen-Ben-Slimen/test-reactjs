@@ -31,12 +31,6 @@ function App() {
         ]
     );
 
-    const [selectedProject, setSelectedProject] = useState(projects[0]);
-
-    const selectProject = (project) => {
-        setSelectedProject(project);
-    }
-
     const addProject = (project) => {
         setProjects(
             (oldProjects) => {
@@ -74,7 +68,7 @@ function App() {
         <BrowserRouter>
             <NavBar/>
             <Routes>
-                <Route path="/" element={<Projects projects={projects} selectProject={selectProject} updateProject={updateProject} deleteProjectById={deleteProjectById}/>}/>
+                <Route path="/" element={<Projects projects={projects} updateProject={updateProject} deleteProjectById={deleteProjectById}/>}/>
                 <Route path="/new-project" element={<NewProject addProject={addProject}/>}/>
             </Routes>
         </BrowserRouter>

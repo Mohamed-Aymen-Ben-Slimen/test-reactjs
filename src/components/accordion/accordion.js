@@ -23,8 +23,10 @@ export default function CustomAccordion({projects, addProject, deleteProjectById
         handleCloseDeleteModal();
     }
 
-    const selectProject = (project) => {
-        setSelectedProject(project);
+    const selectProject = (project, i) => {
+        setSelectedProject(oldSelectedProject => {
+            return {id: i, ...oldSelectedProject};
+        });
     }
 
     return (
@@ -34,7 +36,7 @@ export default function CustomAccordion({projects, addProject, deleteProjectById
             <Accordion>
             {projects.map(
                 (project, index) =>
-                    <Accordion.Item key={index} eventKey={index} onClick={() => selectProject(project)}>
+                    <Accordion.Item key={index} eventKey={index} onClick={() => selectProject(project, index)}>
                         <Accordion.Header>
                             <div className={styles.header}>
                                 <h4 className={styles.headerElement}>{project.name}</h4>

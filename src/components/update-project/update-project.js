@@ -16,7 +16,7 @@ export default function UpdateProject({project, showUpdateModal, handleShowUpdat
             status: project.status
         });
         console.log(project);
-    }, [])
+    }, [project])
 
     const handleChange = (event) => {
         const name = event.target.name;
@@ -31,7 +31,7 @@ export default function UpdateProject({project, showUpdateModal, handleShowUpdat
         if (form.checkValidity() === false) {
             setValidated(true);
         } else {
-            updateProject(formData);
+            updateProject(formData, project.id);
             handleCloseUpdateModal();
         }
     };
