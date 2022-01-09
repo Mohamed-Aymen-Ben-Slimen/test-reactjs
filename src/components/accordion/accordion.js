@@ -24,7 +24,6 @@ export default function CustomAccordion({projects, addProject, deleteProjectById
     }
 
     const selectProject = (project) => {
-        console.log(project);
         setSelectedProject(project);
     }
 
@@ -65,11 +64,6 @@ export default function CustomAccordion({projects, addProject, deleteProjectById
                                             <Button size="sm" variant="outline-primary" onClick={handleShowUpdateModal}>
                                                 Update Project
                                             </Button>
-                                            <UpdateProject project={selectedProject}
-                                                           updateProject={updateProject}
-                                                           showUpdateModal={showUpdateModal}
-                                                           handleCloseUpdateModal={handleCloseUpdateModal}
-                                                           handleShowUpdateModal={handleShowUpdateModal}/>
 
                                 {
                                     project.status === 'Archived' &&
@@ -107,6 +101,11 @@ export default function CustomAccordion({projects, addProject, deleteProjectById
             )}
             </Accordion>
         </div>
+            <UpdateProject project={selectedProject}
+                           updateProject={updateProject}
+                           showUpdateModal={showUpdateModal}
+                           handleCloseUpdateModal={handleCloseUpdateModal}
+                           handleShowUpdateModal={handleShowUpdateModal}/>
         </div>
     );
 }

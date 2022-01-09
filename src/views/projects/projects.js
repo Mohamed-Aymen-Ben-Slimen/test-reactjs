@@ -1,6 +1,5 @@
 import * as React from 'react';
 import CustomAccordion from "../../components/accordion/accordion";
-import VideoPlayer from "../../components/video-player/video-player";
 
 export default function Projects({projects, updateProject, deleteProjectById}) {
 

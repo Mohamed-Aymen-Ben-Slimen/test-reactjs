@@ -16,14 +16,14 @@ function App() {
         [
             {
                 name: 'Next.js 12',
-                description: 'Formik started by expanding on this little higher order component by Brent Jackson, some naming conventions from Redux-Form, and (most recently) the render props approach popularized by React-Motion and React-Router 4. Whether you have used any of the above or not, Formik only takes a few minutes to get started with',
+                description: 'Next.js gives you the best developer experience with all the features you need for production: hybrid static & server rendering, TypeScript support, smart bundling, route pre-fetching, and more. No config needed.',
                 type: 'Automatic editing',
                 status: 'Archived',
                 introId: 'lRQ5z7i7pxE'
             },
             {
                 name: 'React in 100s',
-                description: 'Formik started by expanding on this little higher order component by Brent Jackson, some naming conventions from Redux-Form, and (most recently) the render props approach popularized by React-Motion and React-Router 4. Whether you have used any of the above or not, Formik only takes a few minutes to get started with',
+                description: 'React is a JavaScript library for building user interfaces.',
                 type: 'Automatic editing',
                 status: 'Active',
                 introId: 'Tn6-PIqc4UM'
