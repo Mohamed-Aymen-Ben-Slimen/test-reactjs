@@ -50,7 +50,6 @@ function App() {
     }
 
     const updateProject = (project, id) => {
-        console.log(project);
         setProjects(
             (oldProjects) => {
                 return oldProjects.map((p, index) => {

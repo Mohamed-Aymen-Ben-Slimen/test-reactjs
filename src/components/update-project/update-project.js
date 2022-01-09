@@ -15,7 +15,6 @@ export default function UpdateProject({project, showUpdateModal, handleShowUpdat
             introId: project.introId,
             status: project.status
         });
-        console.log(project);
     }, [project])
 
     const handleChange = (event) => {
